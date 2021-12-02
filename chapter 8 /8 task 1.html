@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<title>Document</title>
+
+	<style>
+		*{
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.container{
+			display: flex;
+			padding: 50px;
+			flex-direction: column;
+			width: 500px;
+		}
+
+		.labels{
+		  margin-top: 7px;
+		}
+
+		.div{
+			display: flex;
+			justify-content: space-between;
+		}
+		.register{
+			width: 260px;
+		}
+
+		.iconImg{
+			width: 50px;
+			margin-right: 10px;
+		}
+
+		.divTask{
+			padding-top: 15px;
+		}
+
+		.oldTask{
+			text-decoration: line-through;
+		}
+
+		.newTask{	
+			text-decoration:  none;
+		}
+
+
+		#toDo >div>div{
+			border: 0.5px solid lightgrey;
+			padding: 20px 0 ;
+		}
+
+	</style>
+	<body onload="showNames(),getTasks()">
+		<div class="container">
+			<div id="leftTask"></div>
+	        <div>
+	        	<input id="things" type="text"> <button onclick="addTask()">+</button>
+	        	 <select  id="calendarr">
+	        		<option >MONDAY</option>
+	        		<option >TUESDAY</option>
+	        		<option >WEDNESDAY</option>
+	        		<option >THURSDAY</option>
+	        	</select>
+	        </div>
+	        <div id="toDo">
+	        	<div class="toDo2">
+	        	  <div id="mn"><span>Monday:</span></div>   
+	        	  <div id="tue"><span>Tuesday:</span></div> 	   
+	        	  <div id="wd"><span>Wednesday:</span></div>
+	        	  <div id="thr"><span>Thursday:</span></div> 	 
+	        	</div>
+	        </div>
+		</div>
+
+		<!-- --------------------------------------------------------------------------- -->
+
+		<div style="padding-left: 240px;">
+			name:<input type="text" id="username"><br><br>
+		    age:<input type="number" id="userage"><br><br>
+			<button onclick="save()">Save </button>
+			<div id="nameList"></div>
+		</div>
+		
+		
+				
+
+
+
+
+
+	<script type="text/javascript" src="java.js"></script>
+</body>
+</html>

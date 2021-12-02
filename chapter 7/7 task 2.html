@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.stLayer{
+			display: flex;
+			justify-content: center;
+			height: 300px;
+			align-items: center;
+		}
+		.register{
+			height: 90%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+	
+		}
+		.register input{
+			width: 500px;
+		}
+
+		#button{
+			width: fit-content;
+			background-color: black;
+			color: white;
+		}
+
+		.email{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 40px;
+		}
+
+		.email p{
+			color: red;
+			font-size: 14px;
+		}
+
+		.pass{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 40px;
+		}
+
+		.pass p {
+			color: red;
+			font-size: 14px;
+		}
+		.retype{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 40px;
+		}
+
+		.retype p{
+			color: red;
+			font-size: 14px;
+		}
+
+		.converter{
+			margin-top: 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 40px;
+			align-items: center;
+		}
+
+		.blockConv{
+				display: flex;
+				justify-content: space-between;
+				width: 800px;
+		}
+		.blockUpper{			
+				display: flex;
+				width: 800px;
+			
+		}
+		.currency{
+			background-color: #e1e3e6;
+			pointer-events:none;
+		}
+
+	</style>
+<head>
+<body>
+	<div class="stLayer">
+	<div class="register">
+		<div class="email">
+			<div>Email:</div>
+			<div><input onchange="putting()" id="mails" type="text"></div>
+			<p id="inUse"></p>
+		</div>
+		<div class="pass">
+			<div>Password:</div>
+			<div><input onchange="putting1()" 
+				id="password2" type="Password">
+			</div>
+			<p id="inLimit"></p>
+		</div>
+		<div class="retype">
+			<div>Retype Password:</div>
+			<div><input onchange="putting2()"
+			 id="retypePass" type="Password">
+			</div>
+			<p id="inSame"></p>
+		</div>
+		<button  onclick="reg()" id="button">REGISTER</button>
+		<button onclick="clickClap()" id="clickMe">click me </button>
+		<br>
+	</div>
+	</div>
+	<hr>
+	<div class="converter">
+		<div class="blockUpper">
+			<div>Введите сумму:</div>
+			<div style="padding-left: 185px;">KZT(tenge)</div>
+			<div style="padding-left: 105px;">USD(dollar)</div>
+			<div style="padding-left: 100px;">EUR(euro)</div>
+		</div>
+
+		<div class="blockConv">
+			
+			<div><input id="sum" type="text"> </div>
+				<div>
+			  <select onchange="convert()" id="selecter">
+			  	<option >Choose the currency</option>
+			  	<option value="kzt">KZT</option>
+			  	<option value="usd">USD</option>
+			  	<option value="eur">EUR</option>
+		      </select>  
+	      		</div>
+
+	      	        <div >
+	      	        <input id="kztBox" class="currency" type="text">
+	      	        </div>
+			     	<div>
+			     		<input id="usdBox" class="currency" type="text">
+			     	</div>
+			     	<div>
+			     		<input id="eurBox" class="currency" type="text">
+			     	</div> 
+		</div>
+	</div>
+
+	<script type="text/javascript" src="java2.js"></script>
+
+
+
+
+
+</body>
+</html>

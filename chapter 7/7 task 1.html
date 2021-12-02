@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+
+		*{
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.div{
+			display: flex;
+			flex-direction: column;
+			width: 250px;
+			margin:50px;
+		}
+		.div button{
+			width: 100px;
+			align-self: flex-end;
+		}
+
+		.debit{
+			display: flex;
+		
+			flex-direction: column;
+			flex-basis: 400px;
+			margin-left: 50px;
+			justify-content: space-around;
+		}
+
+		.card{
+
+			width: 30px;
+			height: 13px;
+
+		}
+		.cardi{
+			display: flex;
+		}
+
+		.infa{
+			display: flex;
+		}
+
+		.cvv{
+			display: flex;
+		}
+		.album{
+			max-height: 500px;
+			max-width: 550px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;	
+			
+		}
+
+		.inAlbum{
+			margin-top: 20px;
+			width: 355px;
+			height: 255px;
+			justify-content: center;
+			display: flex;
+			border:5px solid grey;
+
+		
+		}
+		.album img{
+			width: 350px;
+			height: 250px;
+			justify-content: center;
+		}
+
+		.inBut button{
+			background-color: black;
+			color: white;
+			border: 1px;
+		
+		}
+
+
+
+		.bigger{
+			display: flex;
+			flex-direction: column;
+			height: 500px;
+			align-items: center;
+			justify-content: ;
+			width: 800px;
+		}
+
+		#big{
+			height: 400px;
+
+		}
+
+		#big img {
+			width: 800px;
+			height: 300px;
+			border: 3px solid grey;
+		}
+
+		.small{
+			width: 800px;
+			height: 200px;
+				display: flex;
+			justify-content: space-around;
+			
+		}
+		.small img{
+			height: 100px;
+			width: 100px;
+			border: 2px solid grey;
+		}
+
+		.ndLayer{
+			display: flex;
+			justify-content: center;
+			align-content: flex-end;
+			padding-top: 40px;
+		}
+	</style>
+</head>
+<body>	
+	<div style="display: flex;" class="stlayer">
+			<div class="div" id="div1">
+				Login: <input  id="log" type="text">
+				Password <input id="pass" type="Password">
+				<button  onclick="authen()">Sign in</button>
+			</div>
+
+			<div id="divka"></div>
+
+			<div id="increment" style="padding-top: 50px;margin-left: 20px;">   <button onclick="plus()">+</button><span id="num">231</span>
+			   <button onclick="minus()">-</button> 
+			 </div>
+
+			<div  class="debit">
+				<div class="cardi"><div style="width: 20%;">Card:</div> 
+					<div>
+						<input id="card1" class="card" type="text"> 
+						<input id="card2" class="card" type="text"> 
+						<input id="card3" class="card" type="text">
+					    <input id="card4" class="card" type="text">
+					</div>
+				</div>
+				     
+				<div class="infa">
+					<div style="width:20%">Full Name:</div> 
+					<div><input id="fullName" type="text"></div>
+				</div>
+
+				<div class="cvv">
+					    <div style="width: 20%;">CVV:</div>
+						<div>
+						<input style="width: 20%;" id="cvv1" type="Password"></div>
+				</div> 
+
+				<div class="click">
+					<button onclick="complete()">Complete</button>
+				 </div>
+			</div>
+
+			<div class="album">
+				<div class="inAlbum"><img  id="srce" src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg" alt="img"></div>
+				<div class="inBut"><button onclick="back()"> < BACK </button>
+				 <button onclick="next()"> NEXT > </button></div>
+			</div>
+    </div>
+
+    <div class="ndLayer">
+    	<div class="bigger">
+    	<div id="big"><img id="pig" src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg"></div>
+
+    	<div  id="imgClick" class="small">
+    		<img onclick="loadImage(this)" src="https://i.ytimg.com/vi/Bor5lkRyeGo/hqdefault.jpg" alt="photo">
+    		<img onclick="loadImage(this)" src="https://image.shutterstock.com/image-vector/picture-icon-260nw-323592404.jpg" alt="photo">
+    		<img onclick="loadImage(this)" src="https://fl-img-media.s3.amazonaws.com/uploads/2020/11/Logo-only.png" alt="photo">
+    		<img onclick="loadImage(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmxbGYbc1P6_LEshxIsnx2i8cPiElGoUJfPhFhoXMLJbe05P3K3Fw2IjEAuCtxtQ6OTYo&usqp=CAU" alt="photo">
+    		<img onclick="loadImage(this)" src="https://www.ecoutesolitude.com/wp-content/uploads/2019/03/images2.jpg" alt="photo">
+    		<img onclick="loadImage(this)" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRljZkkRywYKrvWq89YZZ6bZFWoOu9_b_vCgA&usqp=CAU" alt="photo">
+    		<img onclick="loadImage(this)" src="https://www.img-studios.com/wp-content/uploads/2016/10/IMG-LOGO-HOMEPAGE.png" alt="photo">
+    	</div>
+		</div>
+
+
+
+    </div>
+
+
+
+
+	<script type="text/javascript" src="java.js"></script>
+</body>
+</html>

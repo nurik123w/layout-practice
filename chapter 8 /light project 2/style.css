@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+}
+.leftbar a{
+	text-decoration: none;
+	color: #820404;
+	font-weight: bolder;
+}
+.header{
+	background-color: #ba5529;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 15px;
+	
+}
+
+.leftbar{
+	width: 200px;
+	display: flex;
+	justify-content: flex-end;
+}
+.leftbar img{
+	width: 50px;
+}
+
+
+.bigItems{
+	margin: 50px;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	flex-wrap: wrap;
+
+}
+
+.items{
+	border: 1px solid lightgrey;
+	width: 300px;
+	height: 120px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.good {
+	font-weight: bold;
+}
+
+.description{
+  font-size: 14px;
+}
+
+.items button{
+	background-color: #b50404;
+	color: white;
+}
+
+.items div{
+	padding-left: 10px;
+}
+
+.items:nth-child(5){
+	flex-grow: 0.3;
+}
+.items:nth-child(6){
+	flex-grow: 0.3;
+}
+.items:nth-child(7){
+	flex-grow: 0.3;
+}
+
+/*------------------------------------- basket ------------------*/
+
+.head span{
+	color: black;
+	font-weight: bolder;
+
+}
+.head{
+	background-color: gold;
+	display: flex;
+}
+
+
+.side{
+	background-color: black;
+	height: 1200px;
+	
+}
+
+
+#prod{
+	margin-left: 450px;
+	width: 430px;
+}
+
+.prodName{
+	font-weight: bolder;
+}
+
+.costCost{
+
+	font-weight: bolder;
+	font-size: 13px;
+}
+
+
+.divka2{
+	width: 50%;
+	padding-left: 5px;
+
+}
+
+.divka3{
+	width: 25%;
+
+}
+
+.divka4{
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.divka4 button{
+	width: 80%;
+	height: 70%;
+	background-color: red;
+	color: white;
+}
+
+.head div:nth-child(1){
+	width: 50%;
+	padding-left: 7px;
+}
+.head div:nth-child(2){
+	width: 25%;
+}
+.head div:nth-child(3){
+	width: 25%;
+	display: flex;
+	justify-content: center;
+	padding-right: 10px;
+}
+
+#in{
+	border: 1px solid black;
+	background-color: white;
+	
+}
+
+.bigD{
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+}
+
+
+
+
